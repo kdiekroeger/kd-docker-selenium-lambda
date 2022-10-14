@@ -20,5 +20,5 @@ def handler(event=None, context=None):
     options.add_argument("--remote-debugging-port=9222")
     chrome = webdriver.Chrome("/opt/chromedriver",
                               options=options)
-    chrome.get("https://example.com/")
+    chrome.get("https://www.cellartracker.com/notes.asp?iWine=3872386")
     return chrome.find_element(by=By.XPATH, value="//html").text
